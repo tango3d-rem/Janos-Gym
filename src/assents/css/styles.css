@@ -1,0 +1,314 @@
+/* Definición de variables de colores */
+:root {
+    --color-naranja: #ff6b35;
+    --color-dorado: #ffd700;
+    --color-oscuro: #2b2b2b;
+    --color-texto: #e0e0e0;
+    --color-boton-hover: #ff9234;
+  }
+  
+  /* Reset y estilos generales */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-oscuro);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 0 1cm;
+  }
+  
+  /* Header y Navegación */
+  .header {
+    background-color: var(--color-oscuro);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--color-naranja);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo a {
+    color: var(--color-dorado);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: var(--color-naranja);
+  }
+  
+  /* Sección Hero */
+  .hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+  
+  .video-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.3));
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--color-dorado);
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background: linear-gradient(45deg, var(--color-naranja), var(--color-dorado));
+    color: var(--color-oscuro);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: filter 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background: var(--color-boton-hover);
+  }
+  
+  /* Sección de Videos de Actividades */
+  .activities {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .activities h2 {
+    font-size: 2.5rem;
+    color: var(--color-dorado);
+    margin-bottom: 2rem;
+  }
+  
+  .video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .video-item {
+    position: relative;
+    overflow: hidden;
+    width: 320px;
+  }
+  
+  .video-item video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+  
+  .video-item p {
+    margin-top: 0.5rem;
+    color: var(--color-texto);
+  }
+  
+  /* Sección Testimonios */
+  .testimonials {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-naranja);
+    max-width: 300px;
+  }
+  
+  .testimonial strong {
+    display: block;
+    margin-top: 1rem;
+    color: var(--color-dorado);
+  }
+  
+  .rating {
+    color: var(--color-naranja);
+    margin-top: 0.5rem;
+  }
+  
+  /* Sección Servicios */
+  .services {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-naranja);
+    display: inline-block;
+    width: 300px;
+  }
+  
+  .service-card i {
+    font-size: 2.5rem;
+    color: var(--color-naranja);
+  }
+  
+  /* Sección Productos */
+  .featured-products {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .product-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-naranja);
+    width: 250px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .price {
+    color: var(--color-dorado);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Sección Coaching */
+  .coaching {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .program-option {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-naranja);
+    display: inline-block;
+  }
+  
+  /* Footer */
+  .footer {
+    background: var(--color-oscuro);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid var(--color-naranja);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section h4 {
+    color: var(--color-dorado);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section a {
+    color: var(--color-texto);
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .video-gallery, .testimonial-container, .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
