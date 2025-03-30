@@ -159,6 +159,8 @@
     width: 800px;
     height: auto;
     margin: 0 auto;
+    border: 1px solid var(--color-naranja);
+    border-radius: 10px;
   }
 
   .video-item h3 {
