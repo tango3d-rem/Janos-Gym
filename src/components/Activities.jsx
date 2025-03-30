@@ -6,7 +6,7 @@ const Activities = () => {
   const activities = [
     { title: "Entrenamiento de Cardio", video: "/assets/videos/flexiones.mp4" },
     { title: "Levantamiento de Pesas", video: "/assets/videos/flexiones.mp4" },
-    { title: "Clases de Yoga", video: "/assets/videos/flexiones.mp4" }
+    { title: "Clases de Calistenia", video: "/assets/videos/flexiones.mp4" }
   ];
 
   return (

@@ -8,6 +8,18 @@ const Testimonials = () => {
       author: "Carlos G.",
       rating: 5
     },
+
+    {
+      text: "Los entrenadores están altamete calificados y el ambiente es increíble. ¡Muy recomendado!",
+      author: "Ana R.",
+      rating: 5
+    },
+
+    {
+      text: "Janos Gym es el mejor gimnacio al que he asistido, con rutinas efectivas y motivación constante",
+      author: "Luis M.",
+      rating: 5
+    },
     // Agrega más testimonios aquí
   ];
 
