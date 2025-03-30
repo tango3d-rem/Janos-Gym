@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="video-container">
         <video autoPlay muted loop playsInline>
-          <source src="/assents/videos/flexiones.mp4" type="video/mp4" />
+          <source src="/assets/videos/flexiones.mp4" type="video/mp4" />
           <img src="/images/hero-fallback.jpg" alt="Entrenamiento de fuerza" />
         </video>
         <div className="video-overlay"></div>
