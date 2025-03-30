@@ -4,9 +4,9 @@ import React from "react";
 const Activities = () => {
   // Datos reutilizables (puedes moverlos a un archivo aparte)
   const activities = [
-    { title: "Entrenamiento de Cardio", video: "/assents/videos/flexiones.mp4" },
-    { title: "Levantamiento de Pesas", video: "/assents/videos/flexiones.mp4" },
-    { title: "Clases de Yoga", video: "/assents/videos/flexiones.mp4" }
+    { title: "Entrenamiento de Cardio", video: "/assets/videos/flexiones.mp4" },
+    { title: "Levantamiento de Pesas", video: "/assets/videos/flexiones.mp4" },
+    { title: "Clases de Yoga", video: "/assets/videos/flexiones.mp4" }
   ];
 
   return (
