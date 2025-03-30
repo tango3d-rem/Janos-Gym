@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Activities from "./components/Activities";
@@ -12,16 +13,18 @@ import "./assets/css/styles.css";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Hero />
-      <Activities />
-      <Testimonials />
-      <Services />
-      <Products />
-      <Coaching />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <Hero />
+        <Activities />
+        <Testimonials />
+        <Services />
+        <Products />
+        <Coaching />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

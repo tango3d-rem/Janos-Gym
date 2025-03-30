@@ -7,12 +7,12 @@ const Header = () => {
     <header className="header">
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">JANO´S GYM</Link>
+        <a href="/">JANO´S GYM</a>
         </div>
         <ul className="nav-links">
-          <li><Link to="#home">Home</Link></li>
-          <li><Link to="#productos">Productos</Link></li>
-          <li><Link to="#coaching">Coaching</Link></li>
+        <li><a href="#home">Home</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#coaching">Coaching</a></li>
           <li><Link to="#registrarse" className="cta-button">Registrarse</Link></li>
           <li><Link to="#ingresar">Ingresar</Link></li>
         </ul>
