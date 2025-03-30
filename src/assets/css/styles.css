@@ -1,216 +1,220 @@
 /* Definición de variables de colores */
 :root {
-    --color-naranja: #ff6b35;
-    --color-dorado: #ffd700;
-    --color-oscuro: #2b2b2b;
-    --color-texto: #e0e0e0;
-    --color-boton-hover: #ff9234;
-  }
-  
-  /* Reset y estilos generales */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--color-oscuro);
-    color: var(--color-texto);
-    line-height: 1.6;
-    padding: 0 1cm;
-  }
-  
-  /* Header y Navegación */
-  .header {
-    background-color: var(--color-oscuro);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid var(--color-naranja);
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo a {
-    color: var(--color-dorado);
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-  
-  .nav-links a {
-    color: var(--color-texto);
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 500;
-  }
-  
-  .nav-links a:hover {
-    color: var(--color-naranja);
-  }
-  
-  /* Sección Hero */
-  .hero {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .video-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
-  
-  .video-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(43, 43, 43, 0.7), rgba(43, 43, 43, 0.3));
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 3.5rem;
-    color: var(--color-dorado);
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cta-button {
-    background: linear-gradient(45deg, var(--color-naranja), var(--color-dorado));
-    color: var(--color-oscuro);
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    transition: filter 0.3s;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .cta-button:hover {
-    background: var(--color-boton-hover);
-  }
-  
-  /* Sección de Videos de Actividades */
-  .activities {
-    text-align: center;
-    padding: 4rem 0;
-  }
-  
-  .activities h2 {
-    font-size: 2.5rem;
-    color: var(--color-dorado);
-    margin-bottom: 2rem;
-  }
-  
-  .video-gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .video-item {
-    position: relative;
-    overflow: hidden;
-    width: 800px;
-    height: auto;
-    margin: 0 auto;
-    border: 1px solid var(--color-naranja);
-    border-radius: 10px;
-  }
+  --color-naranja: #ff6b35;
+  --color-dorado: #ffd700;
+  --color-oscuro: #2b2b2b;
+  --color-texto: #e0e0e0;
+  --color-boton-hover: #ff9234;
+}
 
-  .video-item h3 {
-    font-size: 1.5rem;
-    color: var(--color-dorado);
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  .video-item video {
-    width: 100%;
-    height: auto;
-    max-height: 450px;
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
-  
-  /* Sección Testimonios */
-  .testimonials {
-    text-align: center;
-    padding: 4rem 0;
-  }
-  
-  .testimonial-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .testimonial {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid var(--color-naranja);
-    max-width: 300px;
-  }
-  
-  .testimonial strong {
-    display: block;
-    margin-top: 1rem;
-    color: var(--color-dorado);
-  }
-  
-  .rating {
-    color: var(--color-naranja);
-    margin-top: 0.5rem;
-  }
+/* Reset y estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* Estilos para estrellas */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-oscuro);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 0 1cm;
+}
+
+/* Header y Navegación */
+.header {
+  background-color: var(--color-oscuro);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--color-naranja);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: var(--color-dorado);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--color-texto);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--color-naranja);
+}
+
+/* Sección Hero */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(43, 43, 43, 0.7),
+    rgba(43, 43, 43, 0.3)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: var(--color-dorado);
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, var(--color-naranja), var(--color-dorado));
+  color: var(--color-oscuro);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: filter 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: var(--color-boton-hover);
+}
+
+/* Sección de Videos de Actividades */
+.activities {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.activities h2 {
+  font-size: 2.5rem;
+  color: var(--color-dorado);
+  margin-bottom: 2rem;
+}
+
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--color-naranja);
+  border-radius: 10px;
+}
+
+.video-item h3 {
+  font-size: 1.5rem;
+  color: var(--color-dorado);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.video-item video {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* Sección Testimonios */
+.testimonials {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-naranja);
+  max-width: 300px;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 1rem;
+  color: var(--color-dorado);
+}
+
+.rating {
+  color: var(--color-naranja);
+  margin-top: 0.5rem;
+}
+
+/* Estilos para estrellas */
 .star {
   color: #ffd700;
   font-size: 1.2rem;
@@ -219,116 +223,168 @@
 /* Iconos de características */
 .feature-icon {
   margin-right: 0.5rem;
-  color: #4CAF50;
+  color: #4caf50;
 }
-  
-  /* Sección Servicios */
-  .services {
-    text-align: center;
-    padding: 4rem 0;
-  }
-  
-  .service-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid var(--color-naranja);
-    display: inline-block;
-    width: 300px;
-  }
-  
-  .service-card i {
-    font-size: 2.5rem;
-    color: var(--color-naranja);
-  }
-  
-  /* Sección Productos */
-  .featured-products {
-    text-align: center;
-    padding: 4rem 0;
-  }
-  
-  .product-grid {
-    display: flex;
-    gap: 2rem;
+
+/* Sección Servicios */
+.services {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-naranja);
+  display: inline-block;
+  width: 300px;
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: var(--color-naranja);
+}
+
+/* Sección Productos */
+.featured-products {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-naranja);
+  width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.price {
+  color: var(--color-dorado);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Sección Coaching */
+.coaching {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.program-option {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-naranja);
+  display: inline-block;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-oscuro);
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 2px solid var(--color-naranja);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section h4 {
+  color: var(--color-dorado);
+  margin-bottom: 1rem;
+}
+
+.footer-section a {
+  color: var(--color-texto);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 1rem;
   }
-  
-  .product-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid var(--color-naranja);
-    width: 250px;
+
+  .hero-content h1 {
+    font-size: 2rem;
   }
-  
-  .product-card img {
+
+  .video-gallery,
+  .testimonial-container,
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Nueva media query para pantallas de 320px */
+@media (max-width: 320px) {
+  /* Aseguramos que la barra de navegación se acomode mejor */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+  }
+
+  /* Aseguramos que la galería de videos se acomode mejor en pantallas pequeñas */
+  .video-gallery {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem; /* Añadimos un pequeño padding para evitar que se peguen a los bordes */
+  }
+
+  .video-item {
+    width: 100%; /* Asegura que los videos ocupen todo el ancho disponible */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    margin-bottom: 1rem; /* Añadimos espacio entre los videos */
+  }
+
+  .video-item h3 {
+    font-size: 1.2rem; /* Reduce aún más el tamaño del título */
+    margin-bottom: 0.5rem;
+  }
+
+  .video-item video {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto; /* Ajusta la altura de los videos en función del ancho */
+    filter: brightness(0.6);
   }
-  
-  .price {
-    color: var(--color-dorado);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+
+  /* Ajustes generales para mejorar la disposición */
+  .activities {
+    padding: 2rem 0; /* Reduce el padding para pantallas más pequeñas */
   }
-  
-  /* Sección Coaching */
-  .coaching {
-    text-align: center;
-    padding: 4rem 0;
+
+  .activities h2 {
+    font-size: 2rem; /* Reduce el tamaño del título de actividades */
   }
-  
-  .program-option {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid var(--color-naranja);
-    display: inline-block;
+
+  .testimonial-container,
+  .product-grid {
+    width: 100%; /* Hace que los contenedores de testimonios y productos ocupen todo el ancho */
   }
-  
-  /* Footer */
-  .footer {
-    background: var(--color-oscuro);
-    padding: 2rem 0;
-    text-align: center;
-    border-top: 2px solid var(--color-naranja);
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section h4 {
-    color: var(--color-dorado);
-    margin-bottom: 1rem;
-  }
-  
-  .footer-section a {
-    color: var(--color-texto);
-    text-decoration: none;
-    margin-right: 1rem;
-  }
-  
-  /* Responsividad */
-  @media (max-width: 768px) {
-    .nav-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-    
-    .hero-content h1 {
-      font-size: 2rem;
-    }
-  
-    .video-gallery, .testimonial-container, .product-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}
