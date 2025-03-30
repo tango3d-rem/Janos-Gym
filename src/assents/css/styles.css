@@ -201,6 +201,18 @@
     color: var(--color-naranja);
     margin-top: 0.5rem;
   }
+
+  /* Estilos para estrellas */
+.star {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+/* Iconos de características */
+.feature-icon {
+  margin-right: 0.5rem;
+  color: #4CAF50;
+}
   
   /* Sección Servicios */
   .services {
