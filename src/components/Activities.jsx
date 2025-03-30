@@ -15,10 +15,10 @@ const Activities = () => {
       <div className="video-gallery">
         {activities.map((activity, index) => (
           <div className="video-item" key={index}>
+            <h3>{activity.title}</h3>
             <video controls muted playsInline>
               <source src={activity.video} type="video/mp4" />
-            </video>
-            <p>{activity.title}</p>
+            </video>            
           </div>
         ))}
       </div>

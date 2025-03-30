@@ -16,7 +16,7 @@ const Testimonials = () => {
     },
 
     {
-      text: "Janos Gym es el mejor gimnacio al que he asistido, con rutinas efectivas y motivación constante",
+      text: "Janos Gym es el mejor gimnasio al que he asistido, con rutinas efectivas y motivación constante",
       author: "Luis M.",
       rating: 5,
     },
