@@ -306,14 +306,16 @@ body {
   min-height: 300px; /* Aseguramos que el pie de página tenga un tamaño mínimo */
 }
 
-/*Contenedor del pie de página*/
+/* Contenedor del pie de página */
 .footer-content {
   display: flex;
-  justify-content: space-between
-  flex-wrap: wrap;
-  flex-grow: 1; /*Esto hace que el contenido ocupe todo el espacio disponible*/
+  justify-content: space-between; /* Añadir el punto y coma */
+  flex-wrap: wrap; /* Corregir el valor */
+  align-items: center; /* Alinea verticalmente los elementos*/
+  padding: 20px; /* Añade un poco de espacio alrededor del contenedor */
+  flex-grow: 1; /* Esto hace que el contenido ocupe todo el espacio disponible */
   align-items: center;
-  justify-content: space-around;
+  /*justify-content: space-around; /* Eliminar esta línea si quieres que solo haya un justify-content */
 }
 
 /* Estilo para los titulos de las secciones*/
@@ -326,7 +328,8 @@ body {
 .footer-section a {
   color: var(--color-texto);
   text-decoration: none;
-  margin-right: 1rem;
+  margin: 0 10px; /* Espaciado entre los enlaces */
+  /* margin-right: 1rem; */
 }
 
 /* Estilos para los iconos de redes sociales*/
@@ -339,6 +342,13 @@ body {
 
 .social-icon:hover {
   color: var(--color-naranja); /* Cambia el color al pasar el ratón */
+}  
+
+/* Si tienes varias secciones dentro del pie de página */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Estilo para el derecho de Autor */
