@@ -72,4 +72,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Janos-Gym
 Página Web Jano's Gym
-721b4f057894e9ddf9695a334594af42d941379a
