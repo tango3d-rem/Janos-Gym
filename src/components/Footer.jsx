@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from "react";
-import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,8 +9,16 @@ const Footer = () => {
         {/* Sección de Contacto */}
         <div className="footer-section">
           <h4>Contacto</h4>
-          <p>Av. Fitnes 1234</p>
+          <p>Jose Marti 1791, Carlos Spegazzini, Bs. As.</p>
           <p>contacto@janosgym.com</p>
+          <a
+              href="https://wa.me/1170161112"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp className="social-icon" />
+            </a>
         </div>
 
         {/* Sección de Redes Sociales */}
@@ -18,7 +26,7 @@ const Footer = () => {
           <h4>Redes Sociales</h4>
           <div className="social-icons">
             <a
-              href="https://instagram.com/tu_gym"
+              href="https://instagram.com/janos_gym"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -34,7 +42,7 @@ const Footer = () => {
               <FaTiktok className="social-icon" />
             </a>
             <a
-              href="https://youtube.com/tu_gym"
+              href="https://www.youtube.com/@Martin_Amarilla"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"

@@ -1,6 +1,6 @@
 // src/components/Header.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
+            <a href="#home">Inicio</a>
           </li>
           <li>
             <a href="#productos">Productos</a>
@@ -20,13 +20,16 @@ const Header = () => {
             <a href="#coaching">Coaching</a>
           </li>
           <li>
+            <a href="#activities">Actividades</a>
+          </li>
+          {/* <li>
             <Link to="#registrarse" className="cta-button">
               Registrarse
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="#ingresar">Ingresar</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
