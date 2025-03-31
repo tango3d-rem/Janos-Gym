@@ -1,6 +1,7 @@
 // src/components/Services.jsx
 import React from "react";
-import { FaDumbbell, FaTshirt, FaVideo } from "react-icons/fa";
+import { FaDumbbell, } from "react-icons/fa";
+// import { FaTshirt, FaVideo } from "react-icons/fa";
 
 const Services = () => {
   return (
