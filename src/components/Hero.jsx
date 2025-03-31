@@ -17,8 +17,8 @@ const Hero = () => {
         <p>
           Clases grupales | Entrenadores certificados | Resultados garantizados
         </p>
-        <a href="#registro" className="cta-button">
-          ¡Iniciar prueba gratis!
+        <a href="https://wa.me/1170161112" className="cta-button">
+          ¡CONTRATAR!
         </a>
       </div>
     </section>

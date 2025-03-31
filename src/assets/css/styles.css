@@ -294,28 +294,83 @@ body {
 }
 
 /* Footer */
+
+/* Estilo para el pie de página */
 .footer {
   background: var(--color-oscuro);
   padding: 2rem 0;
   text-align: center;
   border-top: 2px solid var(--color-naranja);
+  display: flex;
+  flex-direction: column;
+  min-height: 300px; /* Aseguramos que el pie de página tenga un tamaño mínimo */
 }
 
+/*Contenedor del pie de página*/
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between
   flex-wrap: wrap;
+  flex-grow: 1; /*Esto hace que el contenido ocupe todo el espacio disponible*/
+  align-items: center;
+  justify-content: space-around;
 }
 
+/* Estilo para los titulos de las secciones*/
 .footer-section h4 {
   color: var(--color-dorado);
   margin-bottom: 1rem;
 }
 
+/* Estilos para los enlaces dentros de las secciones*/
 .footer-section a {
   color: var(--color-texto);
   text-decoration: none;
   margin-right: 1rem;
+}
+
+/* Estilos para los iconos de redes sociales*/
+.social-icon {
+  font-size: 2rem; /* Aumenta el tamaño de los icinos */
+  color: var(--color-texto);
+  margin: 0.5rem;
+  transition: color 0.3s ease; /* Transicion suave para el cambio de color */
+}
+
+.social-icon:hover {
+  color: var(--color-naranja); /* Cambia el color al pasar el ratón */
+}
+
+/* Estilo para el derecho de Autor */
+.copyright {
+  color: var(--color-texto);
+  font-size: 1rem;
+  text-align: center;
+  margin-top: auto; /* Esto empuja el contenido hacia la parte inferior */
+  padding-top: 1rem; /* Un poco de espacio encima del texto */
+}
+
+/*Estilo para el icono de ubicacion */
+.location-icon {
+  font-size: 2rem;
+  color: var(--color-texto);
+  cursor: pointer; /*Cambia el cursor a mano al pasar sobre el icono */
+  transition: color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.location-icon:hover {
+  color: var(--color-naranja); /* Cambia el color al pasar el ratón */
+}
+
+/* Estilo para la sección de Redes Sociales y Ubicación */
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Espacio entre Redes Sociales y Ubicación */
+  width: 100%;
+  margin-top: 1rem;
 }
 
 /* Responsividad */
